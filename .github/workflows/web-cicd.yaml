@@ -28,4 +28,4 @@ jobs:
         run: aws sts get-caller-identity
 
       - name: Sync website to S3
-        run: aws s3 sync ./website s3://cloudy-portfolio --delete
+        run: aws s3 sync ./website s3://aws-cloudy-portfolio --delete
