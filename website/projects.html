@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Daniel Noel</title>
+    <meta name="description"
+        content="Portfolio of projects by Daniel Noel - Cloud infrastructure, cybersecurity tools, and automation solutions.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor (Desktop Only) -->
+    <div class="custom-cursor" id="customCursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-corner cursor-corner-tl"></div>
+        <div class="cursor-corner cursor-corner-tr"></div>
+        <div class="cursor-corner cursor-corner-br"></div>
+        <div class="cursor-corner cursor-corner-bl"></div>
+    </div>
+
+    <div class="container">
+        <!-- Navbar -->
+        <header class="navbar">
+            <a href="index.html" class="logo cursor-target" aria-label="Navigate to home">
+                danii.
+            </a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html#education" class="nav-link animated-text cursor-target">education</a></li>
+                    <li><a href="projects.html" class="nav-link animated-text cursor-target active">projects</a></li>
+                    <li><a href="blogs.html" class="nav-link animated-text cursor-target">blogs</a></li>
+                </ul>
+                <button class="theme-toggle cursor-target" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content projects-page">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h1 class="section-title">my projects.</h1>
+                <div class="page-description">
+                    <p>Passionate about building high-performance and scalable web applications. I thrive on solving
+                        complex problems, optimizing performance, and creating intuitive user experiences. My expertise
+                        lies in Next.js, TypeScript, and Cloud technologies, with a strong focus on delivering quality
+                        solutions.</p>
+                </div>
+            </section>
+
+            <!-- Projects List -->
+            <div class="projects-grid">
+                <!-- VIPS-TC -->
+                <article class="project-card cursor-target">
+                    <div class="project-image">
+                        <img src="assets/projects/vips.webp" alt="VIPS-TC Website" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2 class="project-title">VIPS-TC</h2>
+                            <div class="project-links">
+                                <a href="https://vips.edu" target="_blank" class="project-link">
+                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Contributed to the development and maintenance of the main VIPS-TC website.</li>
+                            <li>Implemented various front-end features using modern React and Material UI libraries.
+                            </li>
+                            <li>Ensured responsive design and cross-browser compatibility for a seamless user
+                                experience.</li>
+                            <li>Collaborated with the team to enhance website performance and accessibility.</li>
+                        </ul>
+                        <ul class="tech-stack">
+                            <li>React.js</li>
+                            <li>Material UI</li>
+                            <li>Axios</li>
+                            <li>Firebase</li>
+                            <li>Styled Components</li>
+                            <li>Razorpay</li>
+                            <li>XLSX</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="project-divider"></div>
+
+                <!-- Vue Bits -->
+                <article class="project-card cursor-target reverse">
+                    <div class="project-image">
+                        <img src="assets/projects/vue-bits.webp" alt="Vue Bits Library" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2 class="project-title">Vue Bits</h2>
+                            <div class="project-links">
+                                <a href="https://vue-bits.dev/" target="_blank" class="project-link">
+                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/DavidHDev/vue-bits" target="_blank" class="project-link">
+                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Contributed 20+ components to the largest and most creative library of animated Vue
+                                components.</li>
+                            <li>Helped develop highly customizable animated UI elements for modern web projects,
+                                including text animations, backgrounds, and interactive visuals.</li>
+                            <li>Components are designed for seamless integration with Vue.js and Nuxt projects,
+                                providing minimal dependencies and flexible prop-based customization.</li>
+                            <li>Open-source collection growing weekly, inspired by the React Bits project.</li>
+                        </ul>
+                        <ul class="tech-stack">
+                            <li>Vue.js</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="project-divider"></div>
+
+                <!-- Digital Library -->
+                <article class="project-card cursor-target">
+                    <div class="project-image">
+                        <img src="assets/projects/library.webp" alt="Digital Library VIPS-TC" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2 class="project-title">Digital Library, VIPS-TC</h2>
+                            <div class="project-links">
+                                <a href="https://btech.library.vips.edu/" target="_blank" class="project-link">
+                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Developed and launched a functional library website for a technical institution.</li>
+                            <li>Implemented user-friendly interface to improve accessibility of library resources.</li>
+                            <li>Designed responsive layout ensuring compatibility across desktop and mobile devices</li>
+                        </ul>
+                        <ul class="tech-stack">
+                            <li>React.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="project-divider"></div>
+
+                <!-- Skygaze India -->
+                <article class="project-card cursor-target reverse">
+                    <div class="project-image">
+                        <img src="assets/projects/skygaze.webp" alt="Skygaze India" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2 class="project-title">Skygaze India</h2>
+                            <div class="project-links">
+                                <a href="https://www.skygazeindia.com/" target="_blank" class="project-link">
+                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Integrated the Razorpay payment gateway to enable secure and seamless transactions</li>
+                            <li>Built a high-performance UI using Next.js and TypeScript, optimizing user experience and
+                                system efficiency.</li>
+                        </ul>
+                        <ul class="tech-stack">
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Razorpay</li>
+                            <li>Firebase</li>
+                            <li>GCP</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="project-divider"></div>
+
+                <!-- AirWatch PWA -->
+                <article class="project-card cursor-target">
+                    <div class="project-image">
+                        <img src="assets/projects/airwatch.webp" alt="AirWatch PWA" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2 class="project-title">AirWatch PWA</h2>
+                            <div class="project-links">
+                                <a href="https://airwatch-pwa-app.vercel.app/" target="_blank" class="project-link">
+                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Utkarsh-Singhal-26/airwatch-pwa-app" target="_blank"
+                                    class="project-link">
+                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Built a fully responsive, offline-capable Progressive Web App (PWA) using Next.js 15 to
+                                monitor air quality in real-time.</li>
+                            <li>Integrated Firebase Cloud Messaging for push notifications and AI-powered smart insights
+                                using Groq SDK.</li>
+                            <li>Implemented interactive charts with Recharts and Google Maps for detailed
+                                visualizations.</li>
+                            <li>Designed a beautiful UI using TailwindCSS, ShadCN UI, and Lucide Icons with strong
+                                TypeScript typing and scalable architecture.</li>
+                        </ul>
+                        <ul class="tech-stack">
+                            <li>Next.js</li>
+                            <li>ShadCN UI</li>
+                            <li>Tailwind CSS</li>
+                            <li>TypeScript</li>
+                            <li>Firebase</li>
+                            <li>Recharts</li>
+                            <li>Google Maps API</li>
+                            <li>Groq SDK</li>
+                            <li>PWA</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="project-divider"></div>
+
+                <!-- ToDo Extension -->
+                <article class="project-card cursor-target reverse">
+                    <div class="project-image">
+                        <img src="assets/projects/todo.webp" alt="ToDo Extension" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2 class="project-title">ToDo Extension with Chrome Storage API</h2>
+                            <div class="project-links">
+                                <a href="https://todo-extension-webapp.vercel.app/" target="_blank"
+                                    class="project-link">
+                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Utkarsh-Singhal-26/todo-extension" target="_blank"
+                                    class="project-link">
+                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7 7h10v10"></path>
+                                        <path d="M7 17 17 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Developed and launched a Chrome extension for task management using Chrome Storage API.
+                            </li>
+                            <li>Implemented user-friendly interface to enhance productivity and task tracking.</li>
+                            <li>Designed responsive layout ensuring seamless experience across different screen sizes
+                                and browsers.</li>
+                            <li>Integrated message broadcasting for real-time updates and synchronization</li>
+                        </ul>
+                        <p class="project-note">Note: The extension is not published on the Chrome Web Store.</p>
+                        <ul class="tech-stack">
+                            <li>TypeScript</li>
+                            <li>React.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Browser Extension</li>
+                            <li>Chrome Storage API</li>
+                            <li>Message Broadcasting</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <div class="contact-content">
+                    <div class="contact-header">
+                        <h2 class="contact-title">Let's work together.</h2>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities and exciting projects. Whether you have a project
+                            in mind or just want to chat about tech, I'd love to hear from you.
+                        </p>
+                    </div>
+
+                    <div class="contact-buttons">
+                        <div class="primary-buttons">
+                            <a href="mailto:danielnoel.guillen@protonmail.com" class="btn btn-primary cursor-target">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                Get in touch
+                            </a>
+                            <a href="https://drive.google.com/file/d/1piWpArbdbjt4PKF4gZlR0nkD09au_8fE/view"
+                                target="_blank" class="btn btn-outline cursor-target">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z">
+                                    </path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                                Download Resume
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/danielnoelle" target="_blank" class="icon-btn cursor-target"
+                                aria-label="Github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/daniel-noel-guillen-9715a8397/" target="_blank"
+                                class="icon-btn cursor-target" aria-label="Linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="mailto:danielnoel.guillen@protonmail.com" class="icon-btn cursor-target"
+                                aria-label="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="availability cursor-target">
+                        <p class="availability-status">Currently available for freelance work and full-time
+                            opportunities</p>
+                        <p class="response-time">Response time: Usually within 24 hours</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p class="copyright">&copy; <span id="currentYear"></span> Daniel Noel. All rights reserved.</p>
+                <button class="scroll-top cursor-target" id="scrollTop">
+                    Elevate to the top
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m18 15-6-6-6 6"></path>
+                    </svg>
+                </button>
+            </footer>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
