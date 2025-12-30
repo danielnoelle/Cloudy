@@ -347,11 +347,21 @@ button {
    Section Titles
    ============================================ */
 .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1rem;
     font-weight: 500;
     color: var(--foreground);
     opacity: 0.9;
     margin-bottom: 0;
+}
+
+.section-icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    flex-shrink: 0;
 }
 
 /* ============================================
