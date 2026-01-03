@@ -162,10 +162,8 @@ button {
         cursor: none;
     }
 
-    body.cursor-active a,
-    body.cursor-active button,
-    body.cursor-active .cursor-target {
-        cursor: none;
+    body.cursor-active * {
+        cursor: none !important;
     }
 }
 
