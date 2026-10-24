@@ -1,452 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Daniel Noel</title>
+<meta name="description" content="Explore projects by Daniel Noel, from cloud infrastructure and software applications to n8n automation, UI/UX prototypes, AI visuals, and productivity dashboards."/>
+<meta name="author" content="Daniel Noel"/>
+<meta name="theme-color" content="#0b0d0f" media="(prefers-color-scheme: dark)"/>
+<meta name="theme-color" content="#f4f1e9" media="(prefers-color-scheme: light)"/>
+<link rel="canonical" href="https://www.danii.tech/projects.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Daniel Noel"/>
+<meta property="og:title" content="Projects | Daniel Noel"/>
+<meta property="og:description" content="Explore projects by Daniel Noel, from cloud infrastructure and software applications to n8n automation, UI/UX prototypes, AI visuals, and productivity dashboards."/>
+<meta property="og:url" content="https://www.danii.tech/projects.html"/>
+<meta property="og:image" content="https://www.danii.tech/assets/social-preview.png"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Daniel Noel — AI, automation and creative technology. Portfolio at danii.tech."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Projects | Daniel Noel"/>
+<meta name="twitter:description" content="Explore projects by Daniel Noel, from cloud infrastructure and software applications to n8n automation, UI/UX prototypes, AI visuals, and productivity dashboards."/>
+<meta name="twitter:image" content="https://www.danii.tech/assets/social-preview.png"/>
+<meta name="twitter:image:alt" content="Daniel Noel — AI, automation and creative technology. Portfolio at danii.tech."/>
+<link href="assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<link href="portfolio.css?v=20261025a" rel="stylesheet"/><link href="assets/fonts/reference-faces.css" rel="stylesheet"/>
+<script>(function(){try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'}if(t==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}})();</script><script id="introGate">(function(){
+  var entries=performance.getEntriesByType?performance.getEntriesByType('navigation'):[];
+  var navigation=entries[0];
+  var home=/(^|\/)index\.html$/.test(location.pathname)||location.pathname.slice(-1)==='/';
+  var replay=!!(home&&navigation&&navigation.type==='reload');
+  var seen=false;
+  try{seen=sessionStorage.getItem('danii-intro-seen')==='1';}
+  catch(e){try{seen=!!document.referrer&&new URL(document.referrer).origin===location.origin;}catch(ignored){}}
+  if((!seen||replay)&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.documentElement.classList.add('intro-pending');
+    window.__daniiIntroStartedAt=performance.now();
+    window.__daniiIntroFallback=setTimeout(function(){document.documentElement.classList.remove('intro-pending');},2600);
+  }
+})();</script></head><body class="projects-page"><div class="site-loader" id="siteLoader" aria-hidden="true">
+  <div class="loader-grid"></div>
+  <svg class="loader-illustration" viewBox="0 0 260 220" width="208" height="176" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <ellipse class="processor-halo" cx="130" cy="150" rx="92" ry="40"/>
+  <ellipse class="processor-orbit" cx="130" cy="133" rx="112" ry="63"/>
+  <g class="processor-traces" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m88 112-29-18H25m147 18 29-18h34M88 151l-29 18H25m147-18 29 18h34M130 82V37"/>
+  </g>
+  <g class="processor-packets" stroke-linecap="round">
+    <path class="processor-packet" pathLength="100" d="M25 94h34l29 18"/>
+    <path class="processor-packet" pathLength="100" d="M235 94h-34l-29 18"/>
+    <path class="processor-packet" pathLength="100" d="m88 151-29 18H25"/>
+    <path class="processor-packet" pathLength="100" d="m172 151 29 18h34"/>
+  </g>
+  <g class="processor-nodes">
+    <rect x="20" y="89" width="10" height="10" rx="3"/>
+    <rect x="230" y="89" width="10" height="10" rx="3"/>
+    <rect x="20" y="164" width="10" height="10" rx="3"/>
+    <rect x="230" y="164" width="10" height="10" rx="3"/>
+    <path d="m130 25 7 6-7 6-7-6Z"/>
+  </g>
+  <ellipse class="processor-shadow" cx="130" cy="178" rx="54" ry="13"/>
+  <g class="processor-base" stroke-linejoin="round">
+    <path class="processor-side" d="m66 142 64 37 64-37v12l-64 37-64-37Z"/>
+    <path class="processor-face" d="m130 105 64 37-64 37-64-37Z"/>
+    <path class="processor-base-detail" d="m84 142 46 27 46-27M130 179v12"/>
+    <path class="processor-edge" d="m68 149 62 36 62-36"/>
+  </g>
+  <g class="processor-float" stroke-linejoin="round">
+    <g class="processor-pins" stroke-linecap="round">
+      <path d="m85 109-9 5m17 0-9 5m17 0-9 5m17 0-9 5m17 0-9 5m67-25 9 5m-17 0 9 5m-17 0 9 5m-17 0 9 5m-17 0 9 5"/>
+    </g>
+    <path class="processor-side" d="m76 100 54 31 54-31v14l-54 31-54-31Z"/>
+    <path class="processor-top" d="m130 69 54 31-54 31-54-31Z"/>
+    <path class="processor-inset" d="m130 78 39 22-39 23-39-23Z"/>
+    <path class="processor-code" stroke-linecap="round" d="m118 92-12 7 12 7m22-14 12 7-12 7m-7-20-7 27"/>
+    <path class="processor-edge" d="m78 108 52 30 52-30"/>
+    <circle class="processor-status" cx="130" cy="139" r="2"/>
+  </g>
+</svg>
+  <div class="loader-label"><span>booting danii.systems</span><i></i></div>
+</div><a class="skip-link" href="#main-content">Skip to content</a>
+<header><div class="wrap"><nav aria-label="Main navigation">
+<a class="brand-logo" href="index.html">danii<span class="dot">.</span></a>
+<div class="nav-links" id="navLinks">
+<a class="nav-link" href="projects.html"><span class="nav-num">01</span>Projects</a>
+<a class="nav-link" href="work.html"><span class="nav-num">02</span>Work</a>
+<a class="nav-link" href="about.html"><span class="nav-num">03</span>About</a>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Daniel Noel</title>
-    <meta name="description"
-        content="Portfolio of projects by Daniel Noel - Cloud infrastructure, cybersecurity tools, and automation solutions.">
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menuBtn" type="button"><svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 24 24" width="22"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+</nav></div></header><main id="main-content" tabindex="-1"><section class="page-hero"><div class="wrap"><div class="page-label">projects</div><h1>Things I’ve built, end to end.</h1><p>Systems, tools, and interfaces shaped by real constraints: deployment, operations, security, and the people using them.</p></div></section><section class="projects-section"><div class="wrap"><article class="project-card reveal" id="danii-tech" tabindex="-1"><div class="project-window"><div aria-hidden="true" class="window-bar"><span></span><span></span><span></span></div><img alt="Serverless Cloud Portfolio" class="project-img" src="assets/danii/projects/optimized/danii-800.webp" srcset="assets/danii/projects/optimized/danii-400.webp 400w, assets/danii/projects/optimized/danii-800.webp 800w, assets/danii/projects/optimized/danii-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)" width="1210" height="906" decoding="async"/></div><div class="project-body"><div class="project-meta"><span class="project-num">01</span><span class="project-year">2024</span><span aria-hidden="true" class="status-divider"></span><span class="project-status"><span aria-hidden="true" class="status-dot"></span>Actively maintained</span></div><h2>Serverless Cloud Portfolio</h2><div class="project-tagline">A secure, serverless portfolio engineered for repeatable delivery.</div><p class="project-desc">Architected a static portfolio on Amazon S3 with CloudFront delivery and IAM least-privilege access. Added a live visitor-counter API with API Gateway, Lambda, and DynamoDB, then automated infrastructure and deployments with Terraform and GitHub Actions.</p><div class="project-tech"><span class="tech-pill">AWS</span><span class="tech-pill">Terraform</span><span class="tech-pill">S3</span><span class="tech-pill">CloudFront</span><span class="tech-pill">Lambda</span><span class="tech-pill">DynamoDB</span></div><div class="project-links"><a class="project-link source-link" href="https://github.com/danielnoelle/Cloudy" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.5 3.4 5.5 3.7 5.5 3.7a4.3 4.3 0 0 0-.1 3.2 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V22"/></svg>Source</a><a class="project-link docs-link" href="https://github.com/danielnoelle/Cloudy#readme" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h6"/></svg>Docs</a></div></div></article><article class="project-card reveal" id="pulse" tabindex="-1"><div class="project-window"><div aria-hidden="true" class="window-bar"><span></span><span></span><span></span></div><img alt="Pulse" class="project-img" src="assets/danii/projects/optimized/pulse-800.webp" srcset="assets/danii/projects/optimized/pulse-400.webp 400w, assets/danii/projects/optimized/pulse-800.webp 800w, assets/danii/projects/optimized/pulse-1107.webp 1107w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)" width="1107" height="833" decoding="async" loading="lazy"/></div><div class="project-body"><div class="project-meta"><span class="project-num">02</span><span class="project-year">2025</span></div><h2>Pulse</h2><div class="project-tagline">A Linux system management utility that brings the boring, critical work into one place.</div><p class="project-desc">Pulse combines package management, security hardening, encrypted backups, and live monitoring in a modular Tkinter interface. It supports 200+ categorized applications, BorgBackup with AES-256-CTR + HMAC-SHA256, CIS-based audits, UFW, SSH hardening, fail2ban, and resource controls.</p><div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">Tkinter</span><span class="tech-pill">python3-apt</span><span class="tech-pill">BorgBackup</span><span class="tech-pill">PolicyKit</span></div><div class="project-links"><a class="project-link source-link" href="https://github.com/danielnoelle/Pulse" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.5 3.4 5.5 3.7 5.5 3.7a4.3 4.3 0 0 0-.1 3.2 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V22"/></svg>Source</a><a class="project-link docs-link" href="https://github.com/danielnoelle/Pulse#readme" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h6"/></svg>Docs</a></div></div></article><article class="project-card reveal" id="herenciapos" tabindex="-1"><div class="project-window"><div aria-hidden="true" class="window-bar"><span></span><span></span><span></span></div><img alt="HerenciaPOS" class="project-img" src="assets/danii/projects/optimized/herenciapos-800.webp" srcset="assets/danii/projects/optimized/herenciapos-400.webp 400w, assets/danii/projects/optimized/herenciapos-800.webp 800w, assets/danii/projects/optimized/herenciapos-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)" width="1515" height="914" decoding="async" loading="lazy"/></div><div class="project-body"><div class="project-meta"><span class="project-num">03</span><span class="project-year">2025</span></div><h2>HerenciaPOS</h2><div class="project-tagline">Fast, modern point of sale built for offline-first work.</div><p class="project-desc">A Flutter POS for Android, iOS, web, desktop, and Linux with visual menu navigation, varieties and notes, instant receipts, Firebase staff authentication, Firestore sync, category filtering, transaction history, and SQLite storage. Automatic sync runs every 15 minutes, with manual sync available in-app.</p><div class="project-tech"><span class="tech-pill">Flutter</span><span class="tech-pill">Dart</span><span class="tech-pill">Firebase</span><span class="tech-pill">Firestore</span><span class="tech-pill">SQLite</span></div><div class="project-links"><a class="project-link source-link" href="https://github.com/danielnoelle/HerenciaPOS" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.5 3.4 5.5 3.7 5.5 3.7a4.3 4.3 0 0 0-.1 3.2 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V22"/></svg>Source</a><a class="project-link docs-link" href="https://github.com/danielnoelle/HerenciaPOS#readme" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h6"/></svg>Docs</a></div></div></article><article class="project-card reveal" id="quiktap" tabindex="-1"><div class="project-window"><div aria-hidden="true" class="window-bar"><span></span><span></span><span></span></div><img alt="QuikTap" class="project-img" src="assets/danii/projects/optimized/quiktap-800.webp" srcset="assets/danii/projects/optimized/quiktap-400.webp 400w, assets/danii/projects/optimized/quiktap-800.webp 800w, assets/danii/projects/optimized/quiktap-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)" width="1580" height="937" decoding="async" loading="lazy"/></div><div class="project-body"><div class="project-meta"><span class="project-num">04</span><span class="project-year">2025</span></div><h2>QuikTap</h2><div class="project-tagline">A secure Java Swing POS for sales, inventory, and reporting.</div><p class="project-desc">QuikTap combines barcode-ready sales processing, automatic calculations, receipt generation, stock alerts, product import/export, staff and admin roles, session timeout, activity logging, and exportable Excel records in a clean MVC application.</p><div class="project-tech"><span class="tech-pill">Java</span><span class="tech-pill">Java Swing</span><span class="tech-pill">MySQL</span><span class="tech-pill">Maven</span><span class="tech-pill">MVC</span></div><div class="project-links"><a class="project-link source-link" href="https://github.com/danielnoelle/QuikTap" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.5 3.4 5.5 3.7 5.5 3.7a4.3 4.3 0 0 0-.1 3.2 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V22"/></svg>Source</a><a class="project-link docs-link" href="https://github.com/danielnoelle/QuikTap#readme" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h6"/></svg>Docs</a></div></div></article></div></section><section class="more-work-section"><div class="wrap"><h2 class="section-kicker">More work</h2><div class="more-grid"><article class="more-card reveal" id="meridian"><div class="project-window"><div class="window-bar linked-window-bar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><a class="window-url" href="https://meridian-health-beta.vercel.app/" rel="noopener" target="_blank">meridian-health-beta.vercel.app</a></div><a class="more-image-link" href="https://meridian-health-beta.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Meridian website"><img alt="Meridian Health clinical dashboard" class="project-img" src="assets/danii/projects/optimized/meridian-800.webp" srcset="assets/danii/projects/optimized/meridian-400.webp 400w, assets/danii/projects/optimized/meridian-800.webp 800w, assets/danii/projects/optimized/meridian-1200.webp 1200w" sizes="(min-width: 1152px) 352px, (min-width: 1024px) calc((100vw - 96px) / 3), (min-width: 768px) calc((100vw - 72px) / 2), calc(100vw - 48px)" width="1892" height="987" decoding="async" loading="lazy"/></a></div><div class="project-body"><div class="project-meta"><span class="project-num">05</span><span class="project-year">2026</span></div><h3>Meridian</h3><div class="project-tagline">Preventative telehealth shaped around measurable care.</div><p class="project-desc">A healthcare experience for at-home clinical testing, biomarker dashboards, physician consultations, personalized care pathways, and a GHL Automation Tester for validating lead and webhook workflows. Its calm interface turns complex medical signals into a clear, considered next step.</p></div></article><article class="more-card reveal" id="kura"><div class="project-window"><div class="window-bar linked-window-bar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><a class="window-url" href="https://kurashop-two.vercel.app/" rel="noopener" target="_blank">kurashop-two.vercel.app</a></div><a class="more-image-link" href="https://kurashop-two.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Kura website"><img alt="Kura office furniture storefront with an ergonomic workspace collection" class="project-img" src="assets/danii/projects/optimized/kura-800.webp" loading="lazy" srcset="assets/danii/projects/optimized/kura-400.webp 400w, assets/danii/projects/optimized/kura-800.webp 800w, assets/danii/projects/optimized/kura-1200.webp 1200w" sizes="(min-width: 1152px) 352px, (min-width: 1024px) calc((100vw - 96px) / 3), (min-width: 768px) calc((100vw - 72px) / 2), calc(100vw - 48px)" width="1882" height="995" decoding="async"/></a></div><div class="project-body"><div class="project-meta"><span class="project-num">06</span></div><h3>Kura</h3><div class="project-tagline">A considered storefront for better workspaces.</div><p class="project-desc">An office furniture storefront concept that brings chairs, desks, workspace bundles, and accessories into a clear shopping experience. Forest-green accents, editorial typography, and spacious product imagery balance a modern retail interface with a warm, practical feel.</p></div></article><article class="more-card reveal" id="terra-and-till"><div class="project-window"><div class="window-bar linked-window-bar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><a class="window-url" href="https://terraxtill.vercel.app/" rel="noopener" target="_blank">terraxtill.vercel.app</a></div><a class="more-image-link" href="https://terraxtill.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Terra &amp; Till website"><img alt="Terra &amp; Till storefront with produce photography, a harvest-box call to action, and a shopping basket" class="project-img" src="assets/danii/projects/optimized/terra-and-till-800.webp" loading="lazy" srcset="assets/danii/projects/optimized/terra-and-till-400.webp 400w, assets/danii/projects/optimized/terra-and-till-800.webp 800w, assets/danii/projects/optimized/terra-and-till-1200.webp 1200w" sizes="(min-width: 1152px) 352px, (min-width: 1024px) calc((100vw - 96px) / 3), (min-width: 768px) calc((100vw - 72px) / 2), calc(100vw - 48px)" width="1896" height="992" decoding="async"/></a></div><div class="project-body"><div class="project-meta"><span class="project-num">07</span></div><h3>Terra &amp; Till</h3><div class="project-tagline">A fresh take on a farm-to-table storefront.</div><p class="project-desc">A produce storefront concept built around a daily market, seasonal boxes, grower stories, and a shopping basket. Expressive typography, earthy greens, warm orange accents, and harvest photography give the shopping experience a clear visual identity.</p></div></article></div></div></section><section class="selected-showcase reveal" aria-label="Selected work"><div class="wrap"><div class="selected-showcase-head"><div class="section-kicker">Selected work</div></div><div class="selected-showcase-tabs" role="tablist" aria-label="Showcase categories" aria-orientation="horizontal"><button type="button" role="tab" aria-selected="true" aria-controls="showcase-uiux" data-showcase="uiux" id="showcase-tab-uiux" tabindex="0">UI/UX Prototyping</button><button type="button" role="tab" aria-selected="false" aria-controls="showcase-image" data-showcase="image" id="showcase-tab-image" tabindex="-1">Image Generation</button><button type="button" role="tab" aria-selected="false" aria-controls="showcase-n8n" data-showcase="n8n" id="showcase-tab-n8n" tabindex="-1">AI Automation</button><button type="button" role="tab" aria-selected="false" aria-controls="showcase-others" data-showcase="others" id="showcase-tab-others" tabindex="-1">Others</button></div><div class="selected-showcase-panel is-active" id="showcase-uiux" role="tabpanel" data-showcase-panel="uiux" aria-labelledby="showcase-tab-uiux"><div class="selected-showcase-landscape"><figure class="showcase-card"><button class="showcase-media" type="button" data-gallery-project="synaptic" aria-label="Open Synaptic project details"><img src="assets/danii/projects/optimized/synaptic-prototype-800.webp" alt="Synaptic mobile app prototype showing three interface screens" loading="lazy" srcset="assets/danii/projects/optimized/synaptic-prototype-400.webp 400w, assets/danii/projects/optimized/synaptic-prototype-800.webp 800w, assets/danii/projects/optimized/synaptic-prototype-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)" width="1244" height="853" decoding="async"/></button><figcaption class="showcase-caption"><div><h3>Synaptic | Academics Managing App</h3><p>Academics managing app · UI/UX Prototype</p></div><button class="showcase-view" type="button" data-gallery-project="synaptic" aria-label="View Synaptic project details"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M7 7h10v10"/></svg></button></figcaption></figure><figure class="showcase-card"><button class="showcase-media" type="button" data-gallery-project="insurevis" aria-label="Open Insurevis project details"><img src="assets/danii/projects/optimized/insurevis-card-800.webp" alt="Insurevis CNN-based mobile app showing three interface screens" loading="lazy" srcset="assets/danii/projects/optimized/insurevis-card-400.webp 400w, assets/danii/projects/optimized/insurevis-card-800.webp 800w, assets/danii/projects/optimized/insurevis-card-1000.webp 1000w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)" width="1000" height="724" decoding="async"/></button><figcaption class="showcase-caption"><div><h3>Insurevis | CNN-Based Mobile App</h3><p>CNN-based mobile app · Flutter</p></div><button class="showcase-view" type="button" data-gallery-project="insurevis" aria-label="View Insurevis project details"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M7 7h10v10"/></svg></button></figcaption></figure></div></div><div class="selected-showcase-panel" id="showcase-image" role="tabpanel" data-showcase-panel="image" hidden aria-labelledby="showcase-tab-image"><div class="selected-showcase-landscape selected-showcase-portraits"><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="coach" aria-label="Open Coach handbag image"><img class="showcase-artwork" src="assets/danii/projects/optimized/coach-bag-800.webp" alt="Pink Coach handbag campaign with cherry blossoms and flowing silk" width="1024" height="1536" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/coach-bag-400.webp 400w, assets/danii/projects/optimized/coach-bag-800.webp 800w, assets/danii/projects/optimized/coach-bag-1024.webp 1024w" sizes="(min-width: 1152px) 260px, (min-width: 1024px) calc((100vw - 96px) / 4), calc((100vw - 66px) / 2)"/></button></figure><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="airpods" aria-label="Open AirPods Pro image"><img class="showcase-artwork" src="assets/danii/projects/optimized/airpods-800.webp" alt="AirPods Pro campaign above a glowing platform and mountain clouds" width="1024" height="1536" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/airpods-400.webp 400w, assets/danii/projects/optimized/airpods-800.webp 800w, assets/danii/projects/optimized/airpods-1024.webp 1024w" sizes="(min-width: 1152px) 260px, (min-width: 1024px) calc((100vw - 96px) / 4), calc((100vw - 66px) / 2)"/></button></figure><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="apple-watch" aria-label="Open Apple Watch image"><img class="showcase-artwork" src="assets/danii/projects/optimized/apple-watch-800.webp" alt="Apple Watch campaign featuring three watches against a dark green background" width="1122" height="1402" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/apple-watch-400.webp 400w, assets/danii/projects/optimized/apple-watch-800.webp 800w, assets/danii/projects/optimized/apple-watch-1122.webp 1122w" sizes="(min-width: 1152px) 260px, (min-width: 1024px) calc((100vw - 96px) / 4), calc((100vw - 66px) / 2)"/></button></figure><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="oneplus" aria-label="Open OnePlus image"><img class="showcase-artwork" src="assets/danii/projects/optimized/oneplus-800.webp" alt="OnePlus phone summer campaign with a lavender smartphone beside a beach lounger" width="960" height="1200" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/oneplus-400.webp 400w, assets/danii/projects/optimized/oneplus-800.webp 800w, assets/danii/projects/optimized/oneplus-960.webp 960w" sizes="(min-width: 1152px) 260px, (min-width: 1024px) calc((100vw - 96px) / 4), calc((100vw - 66px) / 2)"/></button></figure></div></div><div class="selected-showcase-panel" id="showcase-n8n" role="tabpanel" data-showcase-panel="n8n" hidden aria-labelledby="showcase-tab-n8n"><div class="selected-showcase-landscape"><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="email-triage" aria-label="Open AI Email Triage project details"><img class="showcase-artwork" src="assets/danii/projects/optimized/n8n1-800.webp" alt="n8n workflow for classifying Gmail messages, drafting replies, and logging decisions in Airtable" width="1613" height="748" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/n8n1-400.webp 400w, assets/danii/projects/optimized/n8n1-800.webp 800w, assets/danii/projects/optimized/n8n1-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)"/></button><figcaption class="showcase-caption"><div><h3>AI Email Triage</h3><p>Email classification &amp; reply drafting · n8n</p></div><button class="showcase-view" type="button" data-gallery-project="email-triage" aria-label="View AI Email Triage project details"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M7 7h10v10"/></svg></button></figcaption></figure><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="certificate-delivery" aria-label="Open Automated Certificate Delivery project details"><img class="showcase-artwork" src="assets/danii/projects/optimized/n8n2-800.webp" alt="n8n workflow for matching attendance records and automatically emailing certificates" width="1710" height="746" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/n8n2-400.webp 400w, assets/danii/projects/optimized/n8n2-800.webp 800w, assets/danii/projects/optimized/n8n2-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)"/></button><figcaption class="showcase-caption"><div><h3>Automated Certificate Delivery</h3><p>Attendance matching &amp; certificate emails · n8n</p></div><button class="showcase-view" type="button" data-gallery-project="certificate-delivery" aria-label="View Automated Certificate Delivery project details"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M7 7h10v10"/></svg></button></figcaption></figure></div></div><div class="selected-showcase-panel" id="showcase-others" role="tabpanel" data-showcase-panel="others" hidden aria-labelledby="showcase-tab-others"><div class="selected-showcase-landscape"><figure class="showcase-card"><button class="showcase-media showcase-media-contain" type="button" data-gallery-project="notion-hub" aria-label="Open Notion student dashboard project details"><img class="showcase-artwork" src="assets/danii/projects/optimized/notion1-800.webp" alt="Personal Notion student dashboard with tasks, a Pomodoro timer, and course cards" width="1842" height="946" loading="lazy" decoding="async" srcset="assets/danii/projects/optimized/notion1-400.webp 400w, assets/danii/projects/optimized/notion1-800.webp 800w, assets/danii/projects/optimized/notion1-1200.webp 1200w" sizes="(min-width: 1152px) 540px, (min-width: 1024px) calc((100vw - 80px) / 2), calc(100vw - 48px)"/></button><figcaption class="showcase-caption"><div><h3>Wel’s Hub | Student Dashboard</h3><p>Tasks, courses &amp; Pomodoro · Notion</p></div><button class="showcase-view" type="button" data-gallery-project="notion-hub" aria-label="View Notion student dashboard project details"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M7 7h10v10"/></svg></button></figcaption></figure></div></div></div></section><div class="showcase-modal" id="showcaseModal" hidden><div class="showcase-modal-backdrop" data-gallery-close></div><section class="showcase-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="showcaseModalTitle" aria-describedby="showcaseModalDescription"><div class="showcase-modal-header"><div class="section-kicker">Selected work</div><button class="showcase-modal-close" type="button" aria-label="Close project details" data-gallery-close><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="showcase-modal-content"><div class="showcase-modal-layout"><div class="showcase-modal-copy"><h2 id="showcaseModalTitle"></h2><p id="showcaseModalDescription"></p><div class="showcase-modal-skills" id="showcaseModalSkills"></div></div><div class="showcase-modal-gallery" id="showcaseModalGallery" role="region" aria-label="Project image gallery" aria-roledescription="carousel"><figure class="showcase-slide"><img id="showcaseSlideImage" alt=""/></figure><div class="showcase-slider-controls"><button type="button" class="showcase-slider-arrow" data-slide-step="-1" aria-label="Previous project image"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6-6 6 6 6"/></svg></button><div class="showcase-slider-dots" id="showcaseSlideDots"></div><span class="showcase-slider-count" id="showcaseSlideCount" aria-live="polite" aria-atomic="true"></span><button type="button" class="showcase-slider-arrow" data-slide-step="1" aria-label="Next project image"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m10 6 6 6-6 6"/></svg></button></div></div></div></div></section></div></main><footer class="site-footer-minimal"><div class="wrap"><div class="footer-bottom"><div class="footer-copy">© 2026 Daniel Noel</div><div class="footer-credit">Designed and built by <span class="footer-signature">danii</span>.</div></div></div></footer><script src="portfolio.js?v=20261024m"></script></body></html>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <!-- Custom Cursor (Desktop Only) -->
-    <div class="custom-cursor" id="customCursor">
-        <div class="cursor-dot"></div>
-        <div class="cursor-corner cursor-corner-tl"></div>
-        <div class="cursor-corner cursor-corner-tr"></div>
-        <div class="cursor-corner cursor-corner-br"></div>
-        <div class="cursor-corner cursor-corner-bl"></div>
-    </div>
-
-    <div class="container">
-        <!-- Navbar -->
-        <header class="navbar">
-            <a href="index.html" class="logo cursor-target" aria-label="Navigate to home">
-                danii.
-            </a>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html#education" class="nav-link animated-text cursor-target">education</a></li>
-                    <li><a href="projects.html" class="nav-link animated-text cursor-target active">projects</a></li>
-                    <li><a href="blogs.html" class="nav-link animated-text cursor-target">blogs</a></li>
-                </ul>
-                <button class="theme-toggle cursor-target" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <path d="M12 2v2"></path>
-                        <path d="M12 20v2"></path>
-                        <path d="m4.93 4.93 1.41 1.41"></path>
-                        <path d="m17.66 17.66 1.41 1.41"></path>
-                        <path d="M2 12h2"></path>
-                        <path d="M20 12h2"></path>
-                        <path d="m6.34 17.66-1.41 1.41"></path>
-                        <path d="m19.07 4.93-1.41 1.41"></path>
-                    </svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                    </svg>
-                </button>
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <main class="main-content projects-page">
-            <!-- Page Header -->
-            <section class="page-header">
-                <h1 class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="section-icon">
-                        <path
-                            d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                    </svg> my projects.</h1>
-                <div class="page-description">
-                    <p>Passionate about building secure and scalable solutions. I thrive on solving
-                        complex problems, automating workflows, and strengthening system security. My expertise
-                        spans AWS cloud infrastructure, Linux systems, and cybersecurity, with a strong focus on
-                        delivering reliable and efficient solutions.</p>
-                </div>
-            </section>
-
-            <!-- Projects List -->
-            <div class="projects-grid">
-                <!-- danii.tech -->
-                <article class="project-card cursor-target">
-                    <div class="project-image">
-                        <img src="assets/projects/danii.png" alt="danii.tech Portfolio Website" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h2 class="project-title">danii.tech</h2>
-                            <div class="project-links">
-                                <a href="https://www.danii.tech" target="_blank" class="project-link">
-                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/danielnoelle/Cloudy" target="_blank" class="project-link">
-                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="project-description">
-                            <li>Developed a personal portfolio website hosted on AWS S3 and Cloudfront with a custom
-                                .tech domain.
-                            </li>
-                            <li>Deployed using AWS infrastructure with Terraform for infrastructure as code.</li>
-                            <li>Implemented CI/CD pipeline with GitHub Actions for automated deployments to S3.</li>
-                            <li>Features a serverless visitor counter using AWS Lambda, DynamoDB, and API Gateway.</li>
-                        </ul>
-                        <ul class="tech-stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>AWS</li>
-                            <li>Terraform</li>
-                            <li>GitHub Actions</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <div class="project-divider"></div>
-
-                <!-- Pulse -->
-                <article class="project-card cursor-target reverse">
-                    <div class="project-image">
-                        <img src="assets/projects/pulse.png" alt="Pulse - Linux System Utility" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h2 class="project-title">Pulse</h2>
-                            <div class="project-links">
-                                <a href="https://github.com/danielnoelle/Pulse" target="_blank" class="project-link">
-                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="project-description">
-                            <li>GUI package manager & system utility toolkit for Debian-based Linux distributions.</li>
-                            <li>Features smart package management with 200+ categorized applications and batch
-                                install/remove capabilities.</li>
-                            <li>Includes enterprise backup engine with BorgBackup, AES-256 encryption, and automated
-                                daily backups.</li>
-                            <li>Provides security hardening toolkit with UFW firewall, SSH hardening, fail2ban, and
-                                CIS-based audits.</li>
-                            <li>Real-time resource monitoring for CPU, GPU, RAM, disk, and network with process
-                                management.</li>
-                        </ul>
-                        <ul class="tech-stack">
-                            <li>Python</li>
-                            <li>Tkinter</li>
-                            <li>APT</li>
-                            <li>BorgBackup</li>
-                            <li>PolicyKit</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <div class="project-divider"></div>
-
-                <!-- HerenciaPOS -->
-                <article class="project-card cursor-target">
-                    <div class="project-image">
-                        <img src="assets/projects/herenciapos.png" alt="HerenciaPOS - Flutter POS System"
-                            loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h2 class="project-title">HerenciaPOS</h2>
-                            <div class="project-links">
-                                <a href="https://github.com/danielnoelle/HerenciaPOS" target="_blank"
-                                    class="project-link">
-                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="project-description">
-                            <li>Modern, offline-ready ordering system built with Flutter for cross-platform support.
-                            </li>
-                            <li>Complete sales processing with intuitive menu navigation and instant order tracking.
-                            </li>
-                            <li>Real-time cloud sync with Firebase Firestore and offline-first SQLite storage.</li>
-                            <li>Features smart menu management, order history analytics, and cashier session tracking.
-                            </li>
-                            <li>Secure Firebase authentication with time-in/time-out logging for staff management.</li>
-                        </ul>
-                        <ul class="tech-stack">
-                            <li>Flutter</li>
-                            <li>Dart</li>
-                            <li>Firebase</li>
-                            <li>SQLite</li>
-                            <li>Firestore</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <div class="project-divider"></div>
-
-                <!-- QuikTap -->
-                <article class="project-card cursor-target reverse">
-                    <div class="project-image">
-                        <img src="assets/projects/quiktap.png" alt="QuikTap - Java POS System" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h2 class="project-title">QuikTap</h2>
-                            <div class="project-links">
-                                <a href="https://github.com/danielnoelle/QuikTap" target="_blank" class="project-link">
-                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="project-description">
-                            <li>Fast, secure, and modern Point of Sale system for businesses built with Java Swing.</li>
-                            <li>Unified POS toolkit with sales, inventory, user management, and analytics.</li>
-                            <li>Secure authentication system with staff and admin login with robust session management.
-                            </li>
-                            <li>Smart inventory management with real-time updates, low stock alerts, and batch
-                                operations.</li>
-                            <li>Role-based access control with activity logging and live reporting capabilities.</li>
-                        </ul>
-                        <ul class="tech-stack">
-                            <li>Java</li>
-                            <li>Java Swing</li>
-                            <li>MySQL</li>
-                            <li>Maven</li>
-                            <li>MVC Pattern</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <div class="project-divider"></div>
-
-                <!-- Twaisu -->
-                <article class="project-card cursor-target">
-                    <div class="project-image">
-                        <img src="assets/projects/twaisu.png" alt="Twaisu - TWICE Fan Website" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h2 class="project-title">Twaisu</h2>
-                            <div class="project-links">
-                                <a href="https://twaisu.vercel.app" target="_blank" class="project-link">
-                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/danielnoelle/Twaisu" target="_blank" class="project-link">
-                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="project-description">
-                            <li>Beautiful fan website dedicated to TWICE (트와이스) K-pop group.</li>
-                            <li>Features immersive fullscreen member slider with parallax effects showcasing all 9
-                                members.</li>
-                            <li>Includes complete discography collection, photoshoot gallery, and latest news section.
-                            </li>
-                            <li>Background music toggle with equalizer visualization for enhanced user experience.</li>
-                            <li>Modern design with glassmorphism effects, smooth transitions, and animated wave footer.
-                            </li>
-                        </ul>
-                        <ul class="tech-stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Swiper.js</li>
-                            <li>jQuery</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <div class="project-divider"></div>
-
-                <!-- Dokja -->
-                <article class="project-card cursor-target reverse">
-                    <div class="project-image">
-                        <img src="assets/projects/dokja.png" alt="Dokja - ORV Fan Website" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h2 class="project-title">Dokja</h2>
-                            <div class="project-links">
-                                <a href="https://dokja.vercel.app" target="_blank" class="project-link">
-                                    live preview <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/danielnoelle/Dokja" target="_blank" class="project-link">
-                                    github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M7 7h10v10"></path>
-                                        <path d="M7 17 17 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="project-description">
-                            <li>Fan tribute website for the legendary web novel "Omniscient Reader's Viewpoint".</li>
-                            <li>Features art gallery showcasing official and fan artwork of beloved ORV characters.</li>
-                            <li>Includes latest news section with ORV updates including movie adaptations and casting
-                                announcements.</li>
-                            <li>Curated photoshoot section with stunning promotional images and artwork.</li>
-                            <li>Clean, responsive design built with semantic HTML5 and modern CSS3 features.</li>
-                        </ul>
-                        <ul class="tech-stack">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Font Awesome</li>
-                            <li>Google Fonts</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Contact Section -->
-            <section class="contact-section">
-                <div class="contact-content">
-                    <div class="contact-header">
-                        <h2 class="contact-title">Let's work together.</h2>
-                        <p class="contact-description">
-                            I'm always interested in new opportunities and exciting projects. Whether you have a project
-                            in mind or just want to chat about tech, I'd love to hear from you.
-                        </p>
-                    </div>
-
-                    <div class="contact-buttons">
-                        <div class="primary-buttons">
-                            <a href="mailto:danielnoel.guillen@protonmail.com" class="btn btn-primary cursor-target">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                </svg>
-                                Get in touch
-                            </a>
-                            <a href="assets/projects/resume.pdf" target="_blank" class="btn btn-outline cursor-target">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z">
-                                    </path>
-                                    <polyline points="14 2 14 8 20 8"></polyline>
-                                </svg>
-                                Download Resume
-                            </a>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/danielnoelle" target="_blank" class="icon-btn cursor-target"
-                                aria-label="Github">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                                    </path>
-                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/daniel-noel-guillen-9715a8397/" target="_blank"
-                                class="icon-btn cursor-target" aria-label="Linkedin">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect width="4" height="12" x="2" y="9"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </a>
-                            <a href="mailto:danielnoel.guillen@protonmail.com" class="icon-btn cursor-target"
-                                aria-label="Email">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="availability cursor-target">
-                        <p class="availability-status">Currently available for freelance work and full-time
-                            opportunities</p>
-                        <p class="response-time">Response time: Usually within 24 hours</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <p class="copyright">&copy; <span id="currentYear"></span> Daniel Noel. All rights reserved.</p>
-                <button class="scroll-top cursor-target" id="scrollTop">
-                    Elevate to the top
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m18 15-6-6-6 6"></path>
-                    </svg>
-                </button>
-            </footer>
-        </main>
-    </div>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Meridian Health clinical dashboard</title>
+  <desc id="desc">A calm teal and ivory healthcare dashboard with biomarker cards and a clinical care summary.</desc>
+  <rect width="1200" height="760" fill="#f4f6f1"/>
+  <rect width="1200" height="72" fill="#ffffff"/>
+  <circle cx="58" cy="36" r="21" fill="#0d9b91"/>
+  <path d="M58 23v26M45 36h26" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <text x="94" y="34" fill="#13233a" font-family="Arial,sans-serif" font-size="22" font-weight="700">MERIDIAN HEALTH</text>
+  <text x="94" y="53" fill="#0d9b91" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">CLINICAL TELEHEALTH</text>
+  <rect x="920" y="21" width="210" height="30" rx="15" fill="#e1f2ee"/>
+  <text x="944" y="41" fill="#0b8179" font-family="Arial,sans-serif" font-size="12" font-weight="700">PATIENT DASHBOARD</text>
+  <text x="58" y="143" fill="#718092" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">CLINICAL REFERENCE STANDARDS</text>
+  <text x="58" y="194" fill="#13233a" font-family="Arial,sans-serif" font-size="40" font-weight="700">Your health, measured.</text>
+  <text x="58" y="228" fill="#536273" font-family="Arial,sans-serif" font-size="17">A clear view of the signals that shape your care plan.</text>
+  <rect x="58" y="288" width="514" height="326" rx="18" fill="#ffffff" stroke="#d7e2df"/>
+  <text x="86" y="328" fill="#13233a" font-family="Arial,sans-serif" font-size="20" font-weight="700">Biomarker overview</text>
+  <text x="86" y="353" fill="#718092" font-family="Arial,sans-serif" font-size="13">Latest panel · reviewed by your physician</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="86" y="382" width="458" height="55" rx="10" fill="#f4f8f5"/>
+    <text x="106" y="406" fill="#25364b" font-size="14" font-weight="700">Apolipoprotein B</text><text x="106" y="424" fill="#718092" font-size="11">Cardiovascular marker</text><text x="466" y="414" fill="#0d9b91" font-size="14" font-weight="700" text-anchor="end">Optimal</text>
+    <rect x="86" y="449" width="458" height="55" rx="10" fill="#f4f8f5"/>
+    <text x="106" y="473" fill="#25364b" font-size="14" font-weight="700">hs-CRP inflammation</text><text x="106" y="491" fill="#718092" font-size="11">Vascular stratification</text><text x="466" y="481" fill="#0d9b91" font-size="14" font-weight="700" text-anchor="end">1.0 mg/L</text>
+    <rect x="86" y="516" width="458" height="55" rx="10" fill="#f4f8f5"/>
+    <text x="106" y="540" fill="#25364b" font-size="14" font-weight="700">Fasting insulin</text><text x="106" y="558" fill="#718092" font-size="11">Metabolic sensitivity</text><text x="466" y="548" fill="#0d9b91" font-size="14" font-weight="700" text-anchor="end">On track</text>
+  </g>
+  <rect x="620" y="288" width="522" height="326" rx="18" fill="#102b3a"/>
+  <text x="654" y="328" fill="#78d6c9" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">CARE PATHWAY</text>
+  <text x="654" y="370" fill="#ffffff" font-family="Arial,sans-serif" font-size="28" font-weight="700">Your next steps</text>
+  <g font-family="Arial,sans-serif">
+    <circle cx="680" cy="425" r="17" fill="#0d9b91"/><text x="680" y="431" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">1</text><text x="718" y="430" fill="#fff" font-size="16" font-weight="700">Complete your intake</text>
+    <path d="M680 447v31" stroke="#3d6876" stroke-width="2"/>
+    <circle cx="680" cy="505" r="17" fill="#0d9b91"/><text x="680" y="511" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">2</text><text x="718" y="510" fill="#fff" font-size="16" font-weight="700">Review biomarkers with a physician</text>
+    <path d="M680 527v31" stroke="#3d6876" stroke-width="2"/>
+    <circle cx="680" cy="585" r="17" fill="#0d9b91"/><text x="680" y="591" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">3</text><text x="718" y="590" fill="#fff" font-size="16" font-weight="700">Build a plan that fits your life</text>
+  </g>
+</svg>
