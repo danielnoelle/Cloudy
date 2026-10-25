@@ -32,6 +32,15 @@
   applyTheme(initial);
 })();
 
+/* Keep direct file previews usable while deployed navigation uses clean URLs. */
+(function () {
+  if (window.location.protocol !== 'file:') return;
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    var route = link.getAttribute('href').match(/^\/(projects|work|about|contact)?([?#].*)?$/);
+    if (route) link.setAttribute('href', (route[1] || 'index') + '.html' + (route[2] || ''));
+  });
+})();
+
 /* 2. Mobile Menu Toggle
    ------------------------------------------------------------ */
 (function () {
@@ -585,7 +594,7 @@
     window.setTimeout(function () { key.classList.remove('is-active'); }, 220);
     if (action === 'copy-email') copyEmail();
     if (action === 'github') window.open('https://github.com/danielnoelle', '_blank', 'noopener');
-    if (action === 'contact') window.location.href = 'contact.html';
+    if (action === 'contact') window.location.href = window.location.protocol === 'file:' ? 'contact.html' : '/contact';
     if (action === 'session') showSessionInfo();
   }
   function copyEmail() {
@@ -769,20 +778,18 @@
   });
 })();
 
-/* 7. Active Nav Link Highlighting
-   ------------------------------------------------------------ */
+/* 7. Active navigation works for clean URLs and local HTML previews. */
 (function () {
-  var links = document.querySelectorAll('.nav-link');
-  var path = window.location.pathname;
-
-  links.forEach(function (link) {
-    var href = link.getAttribute('href');
-    if (
-      path.endsWith(href) ||
-      (path.endsWith('/') && href === 'index.html')
-    ) {
-      link.classList.add('active');
-    }
+  function pageName(path) {
+    var name = path.replace(/\/+$/, '').split('/').pop().replace(/\.html$/, '');
+    return !name || name === 'index' ? '/' : '/' + name;
+  }
+  var current = pageName(window.location.pathname);
+  document.querySelectorAll('.nav-link').forEach(function (link) {
+    var active = pageName(new URL(link.href, window.location.href).pathname) === current;
+    link.classList.toggle('active', active);
+    if (active) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
   });
 })();
 

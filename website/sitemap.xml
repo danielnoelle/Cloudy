@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.danii.tech/</loc></url>
-  <url><loc>https://www.danii.tech/projects.html</loc></url>
-  <url><loc>https://www.danii.tech/work.html</loc></url>
-  <url><loc>https://www.danii.tech/about.html</loc></url>
-  <url><loc>https://www.danii.tech/contact.html</loc></url>
+  <url><loc>https://www.danii.tech/projects</loc></url>
+  <url><loc>https://www.danii.tech/work</loc></url>
+  <url><loc>https://www.danii.tech/about</loc></url>
+  <url><loc>https://www.danii.tech/contact</loc></url>
 </urlset>

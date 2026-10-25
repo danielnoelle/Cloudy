@@ -27,8 +27,14 @@ jobs:
       - name: Verify AWS credentials
         run: aws sts get-caller-identity
 
+      - name: Publish clean page URLs
+        run: |
+          for page in projects work about contact; do
+            aws s3 cp "./website/${page}.html" "s3://aws-cloud-portfolio/${page}" --content-type "text/html; charset=utf-8" --only-show-errors
+          done
+
       - name: Sync website to S3
-        run: aws s3 sync ./website s3://aws-cloud-portfolio --delete
+        run: aws s3 sync ./website s3://aws-cloud-portfolio --delete --exclude "projects" --exclude "work" --exclude "about" --exclude "contact"
 
       - name: Invalidate CloudFront
         run: aws cloudfront create-invalidation --distribution-id E10DF5WA6DUMGM --paths "/*"
